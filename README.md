@@ -19,3 +19,12 @@ Then open `http://localhost:4173`.
 - Update the page description and title in `index.html` when your positioning is final.
 
 The site defaults to English. The EN / 中 control switches language and remembers the choice locally.
+
+## Deployment
+
+- Production: https://www.scaiyu998.com/
+- The root domain https://scaiyu998.com/ redirects to the production domain.
+- Vercel fallback: https://aaron-portfolio-sigma.vercel.app/
+- Repository: https://github.com/ScaiYu998/aaron-portfolio
+
+Vercel deploys the `main` branch automatically. This is a static site: use the **Other** framework preset, repository root `./`, and no build command. To publish an update, commit the site changes and push to `main`.
