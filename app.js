@@ -592,7 +592,7 @@ renderReviews();
   let timer;
   if (btn) {
     btn.addEventListener('click', async () => {
-      const email = 'hello@aaron.dev';
+      const email = 'scaiyu998@gmail.com';
       try { await navigator.clipboard.writeText(email); } catch (_) {
         const t = document.createElement('textarea'); t.value = email; document.body.appendChild(t); t.select();
         try { document.execCommand('copy'); } catch (__) { /* 忽略 */ }

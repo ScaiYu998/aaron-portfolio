@@ -12,9 +12,9 @@ python3 -m http.server 4173
 
 Then open `http://localhost:4173`.
 
-## Personalize before publishing
+## Personalization
 
-- Update the sample contact address in `index.html` (`hello@aaron.dev`).
+- Contact email: `scaiyu998@gmail.com`. If it changes, update both the `mailto:` links in `index.html` and the copy-email handler in `app.js`.
 - Replace the generic service copy with your actual strengths and project examples.
 - Update the page description and title in `index.html` when your positioning is final.
 
