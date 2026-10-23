@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071724" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="canonical" href="https://aaron.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aaron — Independent Product Engineer" />
+    <meta property="og:description" content="Independent full-stack engineer building thoughtful digital products from first sketch to production." />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="description"
+      content="Aaron is an independent full-stack engineer building thoughtful digital products from first sketch to production."
+    />
+    <title>Aaron — Independent Product Engineer</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./fonts/syne-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-follower" aria-hidden="true"><span>↗</span></div>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <canvas class="terrain" id="terrain" aria-hidden="true"></canvas>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="map-signal" aria-hidden="true"><span class="signal-cross">+</span><span>FIELD / A—01</span><small id="map-coordinate">050.00 / 050.00</small></div>
+        <div class="map-reticle" aria-hidden="true">
+          <span class="reticle-ring"><span></span></span>
+          <span class="reticle-readout"><b data-i18n="gridLabel">GRID</b> <span id="grid-readout">05 / 04</span></span>
+        </div>
+
+        <header class="site-header">
+          <a class="brand" href="#top" aria-label="Aaron, home">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span class="brand-copy">
+              <strong>AARON</strong>
+              <span data-i18n="brandRole">INDEPENDENT ENGINEER</span>
+            </span>
+          </a>
+
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+            <span></span><span></span>
+          </button>
+
+          <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+            <a href="#work" data-i18n="navWork">Work</a>
+            <a href="#services" data-i18n="navServices">Services</a>
+            <a href="#approach" data-i18n="navApproach">Approach</a>
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a class="nav-contact" href="#contact" data-i18n="navContact">Contact <span aria-hidden="true">↗</span></a>
+          </nav>
+
+          <button class="field-toggle" type="button" aria-pressed="false" aria-label="Switch to daylight map">
+            <span class="field-icon" aria-hidden="true">◐</span><span class="field-label" data-i18n="fieldNight">NIGHT</span>
+          </button>
+          <button class="language-toggle" type="button" aria-label="Switch language">
+            <span class="language-option is-active" data-language="en">EN</span>
+            <span class="language-divider" aria-hidden="true">/</span>
+            <span class="language-option" data-language="zh">中</span>
+          </button>
+        </header>
+
+        <div class="hero-coordinates" aria-hidden="true">
+          <span class="coordinate-mark"></span>
+          <span class="coordinate-copy"><span data-i18n="heroCoordinates">INDEPENDENT · REMOTE COLLABORATION</span><small data-i18n="heroMapDatum">DATUM WGS 84 · SCALE 1:24 000</small></span>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">AARON · INDEPENDENT FULL-STACK ENGINEER</span></p>
+          <h1 id="hero-title" aria-label="Aaron"><span class="hero-name"><span>A</span><span>A</span><span>R</span><span>O</span><span>N</span><span class="hero-period">.</span></span></h1>
+          <div class="hero-copy-row">
+            <p class="hero-role" data-i18n="heroRole">Full-stack engineer.<br /><em>Product-minded builder.</em></p>
+            <div class="hero-summary">
+              <p class="hero-copy" data-i18n="heroCopy">I build clear, dependable digital products — from the first interface to the systems behind it.</p>
+              <div class="hero-actions">
+                <a class="button button-light" href="#work"><span data-i18n="heroPrimary">Explore selected work</span><span class="button-arrow" aria-hidden="true">↘</span></a>
+                <a class="text-link hero-secondary" href="#contact"><span data-i18n="heroSecondary">Have a project in mind?</span><span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-footer">
+          <div class="hero-caption"><span class="caption-index">01 / 07</span><span data-i18n="heroCaption">Thoughtful digital products, from map to market.</span></div>
+          <a class="scroll-cue" href="#intro"><span data-i18n="scroll">SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="intro-section section-pad" id="intro" data-section="01" aria-labelledby="intro-title">
+        <div class="section-rail">
+          <span class="section-number">01</span>
+          <span class="rail-rule"></span>
+          <span class="rail-label" data-i18n="introRail">THE POINT OF VIEW</span>
+        </div>
+        <div class="intro-content">
+          <p class="eyebrow eyebrow-dark" data-i18n="introEyebrow">A PARTNER FOR THE WHOLE BUILD</p>
+          <h2 id="intro-title" data-i18n="introTitle">Good software should feel <em>effortless.</em></h2>
+          <div class="intro-bottom">
+            <span class="intro-star" aria-hidden="true">✳</span>
+            <p data-i18n="introCopy">I work across product thinking, frontend, backend and delivery to make useful ideas real. One thoughtful partner, from the first conversation to the final deploy.</p>
+            <span class="intro-aside" data-i18n="introAside">DESIGN-MINDED<br />ENGINEERING-LED</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section section-pad" id="work" data-section="02" aria-labelledby="work-title">
+        <div class="section-heading work-heading">
+          <div class="section-rail">
+            <span class="section-number">02</span>
+            <span class="rail-rule"></span>
+            <span class="rail-label" data-i18n="workRail">SELECTED WORK</span>
+          </div>
+          <div class="section-heading-main">
+            <p class="eyebrow eyebrow-dark" data-i18n="workEyebrow">INTERFACE STUDIES</p>
+            <h2 id="work-title" data-i18n="workTitle">Thoughtful interfaces,<br /><em>useful by default.</em></h2>
+          </div>
+          <p class="section-heading-note" data-i18n="workNote">A few concept explorations showing how I think about clarity, product detail and the full-stack experience.</p>
+        </div>
+
+        <div class="work-grid">
+          <article class="project-card project-card-wide">
+            <div class="project-preview preview-northstar" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-topbar"><span class="mock-brand"><i></i>northstar</span><span class="mock-date">LAST 30 DAYS⌄</span><span class="mock-avatar">A</span></div>
+                <div class="mock-dashboard">
+                  <aside class="mock-sidebar"><b></b><i></i><i></i><i></i><i></i><span></span><span></span></aside>
+                  <div class="mock-main">
+                    <div class="mock-title-line"><span>Good morning, Alex</span><b>↓ Export</b></div>
+                    <div class="mock-kpis"><div><small>NET SALES</small><strong>$24,860</strong><em>↗ 12.8%</em></div><div><small>ORDERS</small><strong>1,284</strong><em>↗ 8.2%</em></div><div><small>AVG. ORDER</small><strong>$48.20</strong><em>↗ 4.6%</em></div></div>
+                    <div class="mock-chart"><div class="chart-head"><b>Revenue over time</b><small>THIS MONTH</small></div><div class="chart-lines"><span></span><span></span><span></span><span></span><svg viewBox="0 0 500 100" preserveAspectRatio="none"><path d="M0 76 C35 71 44 52 82 60 S133 78 166 48 S220 53 250 40 S300 64 340 37 S385 44 416 20 S465 33 500 8" /></svg></div><div class="chart-axis"><span>01 JUN</span><span>08 JUN</span><span>15 JUN</span><span>22 JUN</span><span>30 JUN</span></div></div>
+                  </div>
+                </div>
+              </div>
+              <span class="preview-stamp">01 — PRODUCT CONCEPT</span>
+            </div>
+            <div class="project-meta"><div><h3>Northstar</h3><p data-i18n="projectOneCopy">A calmer command center for independent commerce teams.</p></div><span class="project-type" data-i18n="projectOneType">PRODUCT · DATA</span></div>
+            <button class="project-open" type="button" data-project="northstar"><span data-i18n="projectOpen">Explore concept</span><span aria-hidden="true">↗</span></button>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview preview-relay" aria-hidden="true">
+              <div class="flow-window">
+                <div class="flow-top"><span class="flow-logo">relay<span>.</span></span><span class="flow-status"><i></i> All changes saved</span><b>Publish ↗</b></div>
+                <div class="flow-body">
+                  <div class="flow-label">NEW CUSTOMER FLOW <span>•••</span></div>
+                  <div class="flow-node trigger-node"><i>✳</i><span><small>TRIGGER</small><b>New signup</b></span><em>↗</em></div>
+                  <div class="flow-connector"><i></i></div>
+                  <div class="flow-node action-node"><i>✉</i><span><small>EMAIL</small><b>Send welcome</b></span><em>↗</em></div>
+                  <div class="flow-connector connector-short"><i></i></div>
+                  <div class="flow-add">＋ Add a step</div>
+                  <div class="flow-note"><span>✦</span> Runs when a new account is created</div>
+                </div>
+              </div>
+              <span class="preview-stamp">02 — WORKFLOW CONCEPT</span>
+            </div>
+            <div class="project-meta"><div><h3>Relay</h3><p data-i18n="projectTwoCopy">An approachable workspace for everyday automation.</p></div><span class="project-type" data-i18n="projectTwoType">AI · WORKFLOW</span></div>
+            <button class="project-open" type="button" data-project="relay"><span data-i18n="projectOpen">Explore concept</span><span aria-hidden="true">↗</span></button>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview preview-form" aria-hidden="true">
+              <div class="form-window">
+                <div class="form-top"><span>FIELDNOTE <i>®</i></span><span>MENU&nbsp; ☰</span></div>
+                <div class="form-body"><div class="form-kicker">OBJECTS FOR SLOWER DAYS</div><div class="form-product"><div class="paper-stack"><span></span><span></span><i>FN</i></div><div class="form-sun"></div></div><h4>Make room<br />for good ideas.</h4><div class="form-bottom"><span>Thoughtfully made.<br />Ready when you are.</span><b>Explore the collection&nbsp; ↗</b></div></div>
+              </div>
+              <span class="preview-stamp">03 — STOREFRONT CONCEPT</span>
+            </div>
+            <div class="project-meta"><div><h3>Fieldnote</h3><p data-i18n="projectThreeCopy">A warm, editorial storefront for considered goods.</p></div><span class="project-type" data-i18n="projectThreeType">COMMERCE · UI</span></div>
+            <button class="project-open" type="button" data-project="fieldnote"><span data-i18n="projectOpen">Explore concept</span><span aria-hidden="true">↗</span></button>
+          </article>
+        </div>
+        <p class="work-disclaimer" data-i18n="workDisclaimer">Concept explorations for this portfolio. Replace with shipped work and measurable outcomes as they become available.</p>
+      </section>
+
+      <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-shell">
+          <div class="dialog-topline"><span class="dialog-kicker" data-i18n="dialogKicker">CONCEPT FIELD NOTES</span><button class="dialog-close" type="button" aria-label="Close project details">×</button></div>
+          <span class="dialog-index" id="dialog-index">CONCEPT / 01</span>
+          <h2 id="dialog-title">Northstar</h2>
+          <p class="dialog-copy" id="dialog-copy"></p>
+          <div class="dialog-tags" id="dialog-tags"></div>
+          <a class="button button-accent dialog-cta" href="#contact"><span data-i18n="dialogCta">Discuss a similar product</span><span class="button-arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </dialog>
+
+      <section class="services-section section-pad" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <div class="section-rail">
+            <span class="section-number">03</span>
+            <span class="rail-rule"></span>
+            <span class="rail-label" data-i18n="servicesRail">CAPABILITIES</span>
+          </div>
+          <div class="section-heading-main">
+            <p class="eyebrow eyebrow-dark" data-i18n="servicesEyebrow">FROM IDEA TO RELEASE</p>
+            <h2 id="services-title" data-i18n="servicesTitle">The right work,<br /><em>done with care.</em></h2>
+          </div>
+          <p class="section-heading-note" data-i18n="servicesNote">Bring a new idea, a messy backlog, or a product that needs its next chapter.</p>
+        </div>
+
+        <div class="service-list">
+          <article class="service-row">
+            <span class="service-index">A / 01</span>
+            <div class="service-main">
+              <h3 data-i18n="serviceOneTitle">Digital products</h3>
+              <p data-i18n="serviceOneCopy">From a focused MVP to a polished feature, I shape and build web experiences that make the product easier to understand and use.</p>
+            </div>
+            <span class="service-tag" data-i18n="serviceOneTag">PRODUCT · WEB APP</span>
+            <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-detail-1"><span class="sr-only" data-i18n="serviceOneMore">More about digital products</span><span aria-hidden="true">+</span></button>
+            <div class="service-detail" id="service-detail-1" hidden><div><span class="detail-label" data-i18n="deliverables">WHAT WE CAN BUILD</span><p data-i18n="serviceOneDetail">A focused MVP, a customer portal, or a complete web app. Product flows, responsive interfaces, and a clear first release.</p><a class="text-link dark-link" href="#contact"><span data-i18n="serviceStart">Discuss your project</span><span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="service-row">
+            <span class="service-index">A / 02</span>
+            <div class="service-main">
+              <h3 data-i18n="serviceTwoTitle">Full-stack delivery</h3>
+              <p data-i18n="serviceTwoCopy">Frontend, APIs, data and deployment, connected into one reliable system with the details handled along the way.</p>
+            </div>
+            <span class="service-tag" data-i18n="serviceTwoTag">FRONTEND · BACKEND</span>
+            <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-detail-2"><span class="sr-only" data-i18n="serviceTwoMore">More about full-stack delivery</span><span aria-hidden="true">+</span></button>
+            <div class="service-detail" id="service-detail-2" hidden><div><span class="detail-label" data-i18n="deliverables">WHAT WE CAN BUILD</span><p data-i18n="serviceTwoDetail">Connected frontend and backend, APIs, authentication, database design, and deployment. One coherent product from interface to infrastructure.</p><a class="text-link dark-link" href="#contact"><span data-i18n="serviceStart">Discuss your project</span><span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="service-row">
+            <span class="service-index">A / 03</span>
+            <div class="service-main">
+              <h3 data-i18n="serviceThreeTitle">AI &amp; automation</h3>
+              <p data-i18n="serviceThreeCopy">Practical AI features and workflow integrations that take repetitive work off your team's plate.</p>
+            </div>
+            <span class="service-tag" data-i18n="serviceThreeTag">INTEGRATION · WORKFLOW</span>
+            <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-detail-3"><span class="sr-only" data-i18n="serviceThreeMore">More about AI and automation</span><span aria-hidden="true">+</span></button>
+            <div class="service-detail" id="service-detail-3" hidden><div><span class="detail-label" data-i18n="deliverables">WHAT WE CAN BUILD</span><p data-i18n="serviceThreeDetail">AI assistants, document processing, and integrations between your existing tools. Start with a real workflow and automate the repetitive steps.</p><a class="text-link dark-link" href="#contact"><span data-i18n="serviceStart">Discuss your project</span><span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="service-row">
+            <span class="service-index">A / 04</span>
+            <div class="service-main">
+              <h3 data-i18n="serviceFourTitle">Product improvements</h3>
+              <p data-i18n="serviceFourCopy">Thoughtful fixes, performance improvements and feature work for products already in motion.</p>
+            </div>
+            <span class="service-tag" data-i18n="serviceFourTag">ITERATION · SUPPORT</span>
+            <button class="service-toggle" type="button" aria-expanded="false" aria-controls="service-detail-4"><span class="sr-only" data-i18n="serviceFourMore">More about product improvements</span><span aria-hidden="true">+</span></button>
+            <div class="service-detail" id="service-detail-4" hidden><div><span class="detail-label" data-i18n="deliverables">WHAT WE CAN BUILD</span><p data-i18n="serviceFourDetail">A faster website, a clearer user journey, or a feature your customers keep asking for. Scoped improvements built on the product you already have.</p><a class="text-link dark-link" href="#contact"><span data-i18n="serviceStart">Discuss your project</span><span aria-hidden="true">↗</span></a></div></div>
+          </article>
+        </div>
+
+        <div class="service-footnote"><span class="footnote-dot"></span><span data-i18n="serviceFootnote">Small, focused engagements welcome. Clear scope, direct communication, no hand-offs.</span></div>
+      </section>
+
+      <section class="approach-section section-pad" id="approach" aria-labelledby="approach-title">
+        <div class="section-heading approach-heading">
+          <div class="section-rail section-rail-light">
+            <span class="section-number">04</span>
+            <span class="rail-rule"></span>
+            <span class="rail-label" data-i18n="approachRail">THE PROCESS</span>
+          </div>
+          <div class="section-heading-main">
+            <p class="eyebrow" data-i18n="approachEyebrow">SIMPLE BY INTENTION</p>
+            <h2 id="approach-title" data-i18n="approachTitle">Clear steps.<br /><em>Good momentum.</em></h2>
+          </div>
+          <p class="section-heading-note" data-i18n="approachNote">A low-friction process keeps the focus on solving the right problem and shipping work that lasts.</p>
+        </div>
+
+        <div class="process-list">
+          <article class="process-item">
+            <span class="process-index">01</span>
+            <div class="process-content"><h3 data-i18n="processOneTitle">Get aligned</h3><p data-i18n="processOneCopy">We define the outcome, constraints and smallest useful first step.</p></div>
+            <span class="process-mark" aria-hidden="true">↘</span>
+          </article>
+          <article class="process-item">
+            <span class="process-index">02</span>
+            <div class="process-content"><h3 data-i18n="processTwoTitle">Build in the open</h3><p data-i18n="processTwoCopy">Short feedback loops, visible progress and decisions made together.</p></div>
+            <span class="process-mark" aria-hidden="true">↘</span>
+          </article>
+          <article class="process-item">
+            <span class="process-index">03</span>
+            <div class="process-content"><h3 data-i18n="processThreeTitle">Ship with confidence</h3><p data-i18n="processThreeCopy">A tested, documented handoff and a clear path for what's next.</p></div>
+            <span class="process-mark" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-rail">
+          <span class="section-number">05</span>
+          <span class="rail-rule"></span>
+          <span class="rail-label" data-i18n="aboutRail">A LITTLE ABOUT ME</span>
+        </div>
+        <div class="about-content">
+          <div class="about-heading">
+            <p class="eyebrow eyebrow-dark" data-i18n="aboutEyebrow">ONE PERSON, END TO END</p>
+            <h2 id="about-title" data-i18n="aboutTitle">Engineer by craft.<br /><em>Partner by nature.</em></h2>
+          </div>
+          <div class="about-copy">
+            <p data-i18n="aboutCopyOne">I'm Aaron, a full-stack developer who enjoys making complex things feel simple. I care about the small decisions that make software easier to use, easier to maintain and easier to trust.</p>
+            <p data-i18n="aboutCopyTwo">I work directly with founders and small teams, bringing a product mindset to the code and ownership to every stage of the build.</p>
+            <a class="text-link dark-link" href="#contact"><span data-i18n="aboutLink">A bit more about working together</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="capability-strip" aria-label="Areas of work"><div class="capability-track"><div class="capability-group">
+          <span data-i18n="capOne">PRODUCT THINKING</span><span class="strip-star" aria-hidden="true">✳</span>
+          <span data-i18n="capTwo">INTERFACE CRAFT</span><span class="strip-star" aria-hidden="true">✳</span>
+          <span data-i18n="capThree">SYSTEMS THAT SCALE</span><span class="strip-star" aria-hidden="true">✳</span>
+          <span data-i18n="capFour">THOUGHTFUL DELIVERY</span><span class="strip-star" aria-hidden="true">✳</span>
+        </div></div></div>
+      </section>
+
+      <section class="testimonials-section" id="kind-words" aria-labelledby="testimonials-title">
+        <div class="rec-lanes" aria-hidden="true">
+          <div class="rec-lane" style="--lane-dur: 90s"><div class="rec-track" data-lane="0"></div></div>
+          <div class="rec-lane is-reverse" style="--lane-dur: 110s"><div class="rec-track" data-lane="1"></div></div>
+          <div class="rec-lane" style="--lane-dur: 100s"><div class="rec-track" data-lane="2"></div></div>
+        </div>
+        <div class="rec-inner section-pad">
+          <header class="rec-header">
+            <div class="section-rail section-rail-light"><span class="section-number">06</span><span class="rail-rule"></span><span class="rail-label" data-i18n="tRail">FIELD REPORTS</span></div>
+            <h2 id="testimonials-title" data-i18n="tTitle">What people <em>say.</em></h2>
+          </header>
+          <div class="rec-anchor">
+            <p class="rec-stat"><span class="rec-count">12</span><span class="rec-stars" aria-hidden="true">★★★★★</span></p>
+            <p class="rec-label" data-i18n="tScore">recommendations from founders, teams and clients</p>
+            <ul class="rec-tally">
+              <li><strong>5</strong><span data-i18n="tTallyA">founders</span></li>
+              <li><strong>4</strong><span data-i18n="tTallyB">product teams</span></li>
+              <li><strong>3</strong><span data-i18n="tTallyC">agencies</span></li>
+            </ul>
+            <p class="rec-text" data-i18n="tAnchorText">Every one of them drifts behind this card.</p>
+            <a class="button button-light" href="#contact"><span data-i18n="tCta">Become the next story</span><span class="button-arrow" aria-hidden="true">↗</span></a>
+            <ul class="sr-only" id="rec-list"></ul>
+          </div>
+          <p class="work-disclaimer rec-note" data-i18n="tNote">Sample testimonials for layout. Replace with real client feedback before publishing.</p>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-visual" aria-hidden="true">
+          <span class="contact-orbit orbit-one"></span><span class="contact-orbit orbit-two"></span>
+          <span class="contact-cross cross-one">+</span><span class="contact-cross cross-two">+</span>
+          <span class="contact-coord">REMOTE COLLABORATION<br />INDEPENDENT · WORLDWIDE</span>
+        </div>
+        <div class="contact-inner">
+          <div class="section-rail section-rail-light contact-rail">
+            <span class="section-number">07</span><span class="rail-rule"></span><span class="rail-label" data-i18n="contactRail">NEXT UP</span>
+          </div>
+          <p class="eyebrow" data-i18n="contactEyebrow">GOOD WORK STARTS WITH A CONVERSATION</p>
+          <h2 id="contact-title" data-i18n="contactTitle">What are you<br />thinking about <em>building?</em></h2>
+          <p class="contact-copy" data-i18n="contactCopy">Tell me what you're working on. A rough idea is a perfectly good place to start.</p>
+          <a class="button button-accent" id="email-link" href="mailto:hello@aaron.dev?subject=Let%E2%80%99s%20build%20something"><span data-i18n="contactButton">Start a conversation</span><span class="button-arrow" aria-hidden="true">↗</span></a>
+          <button class="copy-email" id="copy-email" type="button"><span data-i18n="copyEmail">Copy email</span></button>
+          <p class="contact-status"><span class="status-dot" aria-hidden="true"></span><span data-i18n="statusOpen">Available for new projects</span><span class="status-sep" aria-hidden="true">·</span><span class="local-time" id="local-time"></span></p>
+          <ul class="stack-chips" aria-label="Tech stack"><li>React</li><li>TypeScript</li><li>Node.js</li><li>Python</li><li>PostgreSQL</li><li>AWS</li><li>AI / LLM</li></ul>
+          <nav class="social-links" aria-label="Social"><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a><a href="https://x.com/" target="_blank" rel="noopener">X</a><a href="mailto:hello@aaron.dev">Email</a></nav>
+          <span class="contact-small" data-i18n="contactSmall">DIRECT · INDEPENDENT · WORLDWIDE</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#top">A<span>.</span></a>
+      <span class="footer-note" data-i18n="footerNote">Thoughtfully built for the next thing.</span>
+      <div class="footer-right"><span>© <span id="current-year"></span> AARON</span><a href="#top" data-i18n="backTop">BACK TO TOP ↑</a></div>
+    </footer>
+      <noscript><p style="position:fixed;bottom:0;left:0;right:0;padding:10px;background:#071724;color:#fff;text-align:center;font:14px sans-serif">Please enable JavaScript for the full experience.</p></noscript>
+  </body>
+</html>
